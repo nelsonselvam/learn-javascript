@@ -1,0 +1,29 @@
+/* This CSS file styles the random number generator website */
+
+/* Styles for the body element */
+body {
+    /* Sets the font family to 'Trebuchet MS' */
+    font-family: 'Trebuchet MS';
+    /* Centers the text content */
+    text-align: center;
+}
+
+/* Styles for the button with the id 'myButton' */
+#myButton {
+    /* Sets the font size to 3em */
+    font-size: 3em;
+    /* Sets the font family to 'Trebuchet MS' */
+    font-family: 'Trebuchet MS';
+    /* Adds padding to the button */
+    padding: 5px 25px;
+    /* Rounds the corners of the button */
+    border-radius: 10px;
+    /* Sets the border color to a specific RGB value */
+    border-color: rgb(124, 129, 129);
+}
+
+/* Styles for elements with the class 'myLabels' */
+.myLabels {
+    /* Sets the font size to 3em */
+    font-size: 3em;
+}
