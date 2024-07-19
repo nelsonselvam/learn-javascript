@@ -8,9 +8,6 @@ const myLabel3 = document.getElementById("myLabel3");
 const min = 1;
 const max = 6;
 
-// Declare a variable to store the random number
-let randonNum;
-
 // Add an event listener to the button
 myButton.addEventListener("click", () => {
   // Generate and display random numbers in the labels
