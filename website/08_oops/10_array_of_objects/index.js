@@ -1,28 +1,51 @@
-/* THIS KEYWORD
+/* ARRAY OF OBJECTS
 
-    - reference to the object where `this` is used
-    - object depends on immediate context
-    - for example: person.name = this.name
-    - will not work with arrow functions
+   
 */
 
-const person1 = {
-  firstName: "Marcus",
-  lastName: "Aurelius",
-  age: 32,
-  isEmployed: false,
-  saySomething: function () {
-    console.log(
-      // accessing using the this keyword
-      `${this.firstName} ${this.lastName} once said "You have power over your mind - not outside events. Realize this, and you will find strength."`
-    );
-  },
-  quote: function () {
-    console.log(
-      `${this.firstName} ${this.lastName} once quoted "The happiness of your life depends upon the quality of your thoughts."`
-    );
-  },
-};
+const fruits = [
+  { name: "apple", color: "red", calories: 40 },
+  { name: "papaya", color: "yellowish orange", calories: 126 },
+  { name: "orange", color: "orange", calories: 50 },
+  { name: "kiwi", color: "green", calories: 30 },
+  { name: "banana", color: "yellow", calories: 109 },
+];
 
-person1.saySomething();
-person1.quote();
+// accessing an object in an array
+console.log(fruits[0].name);
+
+// add an object : use push method
+fruits.push({ name: "grapes", color: "purple", calories: 45 });
+
+console.log(fruits);
+
+fruits.pop();
+
+console.log(fruits);
+
+// splicing
+console.log(fruits.slice(1, 4));
+
+// forEach()
+fruits.forEach((fruits) => console.log(fruits.name));
+
+// map
+const fruitNames = fruits.map((fruits) => fruits.name);
+console.log(fruitNames);
+
+// filter
+const redFruits = fruits.filter((fruits) => fruits.color === "red");
+console.log(redFruits);
+
+// reduce
+const maxCalFruit = fruits.reduce((max, fruit) =>
+  fruit.calories > max.calories ? fruit : max
+);
+
+console.log(maxCalFruit);
+
+const minCalFruit = fruits.reduce((min, fruit) =>
+  fruit.calories < min.calories ? fruit : min
+);
+
+console.log(minCalFruit.calories);

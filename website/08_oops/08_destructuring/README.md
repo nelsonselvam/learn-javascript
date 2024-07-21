@@ -1,10 +1,8 @@
-/* DESTRUCTURING
+- extract values from arrays and objects & assign them to variables in a convenient way
+- Array Destructuring `[]`
+- Object Destructuring `{}`
 
-    - extract values from arrays and objects & assign them to variables in a convenient way
-    - Array Destructuring []
-    - Object Destructuring {}
-
-*/
+``` javascript
 
 // example 1 : swap values of variables
 let a = 4;
@@ -63,3 +61,5 @@ function displayPerson({ firstName, lastName, age, job }) {
 }
 
 displayPerson(person1);
+
+```

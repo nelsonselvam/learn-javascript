@@ -1,10 +1,9 @@
-/* NESTED OBJECTS
+- Objects inside other objects
+- represent complex data structures
+- child object is enclosed by a parent object
+- ex: `Person{Address{}, ContactInfo{}}`
 
-   - Objects inside other objects
-   - represent complex data structures
-   - child object is enclosed by a parent object
-   - ex: Person{Address{}, ContactInfo{}}
-*/
+``` javascript
 
 const person = {
   firstName: "Marcus",
@@ -57,3 +56,5 @@ const batman = new Person(
 console.log(batman);
 
 console.log(batman.address.city);
+
+```
