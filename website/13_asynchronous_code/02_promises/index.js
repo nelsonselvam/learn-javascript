@@ -81,7 +81,7 @@ function takeOutTrash() {
   });
 }
 
-walkTheDog()
+walkTheDog()    // chain the methods
   .then((res) => {
     console.log(res);
     return cleanTheKitchen();
@@ -91,7 +91,7 @@ walkTheDog()
     return takeOutTrash();
   })
   .then((res) => {
-    console.log(res);
+    console.log(res); 
     console.log("You completed all the chores");
   }) // on failure - catches rejects
-  .catch((err) => console.log(err));
+  .catch((err) => console.error(err));
