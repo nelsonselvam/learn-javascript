@@ -1,0 +1,58 @@
+body {
+    font-family: 'Lucida Sans';
+    background-color: rgb(223, 221, 218);
+}
+
+h1{
+    color: rgb(75, 131, 243);
+}
+
+form{
+    background-color: aliceblue;
+    text-align: center;
+    max-width:fit-content;
+    margin:auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px hsla(0, 0%, 0%,0.3);
+}
+
+#textbox{
+    width: 50%;
+    font-size: 2em;
+    text-align: center;
+    border: 2px solid rgb(205, 204, 204); 
+    border-radius: 4px;
+    box-shadow: inset;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button{
+    margin-top: 15px;
+    color: white;
+    background-color: hsl(0, 100%, 60%);
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(0, 100%, 50%);
+}
+
+button:active{
+    background-color: hsl(0, 100%, 40%);
+}
+
+#result{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 15px;
+}

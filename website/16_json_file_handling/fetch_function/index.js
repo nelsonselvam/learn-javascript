@@ -11,6 +11,7 @@
 
 async function fetchPokemon() {
   try {
+
     const pokemonName = document
       .getElementById("pokemonName")
       .value.toLowerCase();
@@ -20,8 +21,8 @@ async function fetchPokemon() {
     );
 
     if (!response.ok) {
-      pokemonImg.src = "";
-      pokemonImg.style.display = "block";
+      // pokemonImg.src = "";
+      // pokemonImg.style.display = "block";
       throw Error("Something went wrong");
     }
 
@@ -34,6 +35,7 @@ async function fetchPokemon() {
 
     pokemonImg.src = imgSrc;
     pokemonImg.style.display = "block";
+
   } catch (error) {
     console.log(error);
   }
