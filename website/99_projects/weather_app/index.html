@@ -2,36 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Functions Project - Temperature Conversion</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <form id="temp-form">
+  <form class="weatherForm">
+    <input type="text" class="cityInput" placeholder="Enter a city">
+    <button type="submit" class="submitBtn">Get Weather</button>
 
-        <h1 class="heading">Convert Temperature - ℃ to ℉/℉ to ℃</h1>
+  </form>
 
-        <input type="number" id="textbox" value=0><br> <br>
+  <div class="card" style="display: none">
 
-        <input type="radio" id="toFahrenheit" name="unit">
-        <label for="toFahrenheit">Celcius ➡️ Fahrenheit</label> <br>
-        
-        <input type="radio" id="toCelcius" name="unit">
-        <label for="toCelcius">Fahrenheit ➡️ Celcius</label>
-        
-        <br><br>
-        
-        <button type="button" onClick="convertTemperature()">Submit</button>
-        <p id="result"></p>
+  </div>
 
-    </form>
-
-
-
-    <script src="index.js"></script>
+  <script src="index.js"></script> <!---  this needs to be placed at the bottom ALWAYS-->
 </body>
 
 </html>
